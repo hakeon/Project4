@@ -6,31 +6,34 @@ class TasksController extends \BaseController {
 	 * Display a listing of the resource.
 	 * GET /tasks
 	 *
+	 * @param Project $project
 	 * @return Response
 	 */
-	public function index()
+	public function index(Project $project)
 	{
-		//
+		$this->layout->content = View::make('tasks.index', compact('project'));
 	}
 
 	/**
 	 * Show the form for creating a new resource.
 	 * GET /tasks/create
 	 *
+	 * @param Project $project
 	 * @return Response
 	 */
-	public function create()
+	public function create(Project $project)
 	{
-		//
+		$this->layout->content = View::make('tasks.create', compact('project'));
 	}
 
 	/**
 	 * Store a newly created resource in storage.
 	 * POST /tasks
 	 *
+	 * @param Project $project
 	 * @return Response
 	 */
-	public function store()
+	public function store(Project $project)
 	{
 		//
 	}
@@ -39,34 +42,36 @@ class TasksController extends \BaseController {
 	 * Display the specified resource.
 	 * GET /tasks/{id}
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(Project $project)
 	{
-		//
+		$this->layout->content = View::make('tasks.show', compact('project'));
 	}
 
 	/**
 	 * Show the form for editing the specified resource.
 	 * GET /tasks/{id}/edit
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
+	 * @param Task $task
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit(Project $project, Task $task)
 	{
-		//
+		$this->layout->content = View::make('tasks.edit', compact('project', 'task'));
 	}
 
 	/**
 	 * Update the specified resource in storage.
 	 * PUT /tasks/{id}
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
+	 * @param Task $task
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Project $project, Task $task)
 	{
 		//
 	}
@@ -75,10 +80,11 @@ class TasksController extends \BaseController {
 	 * Remove the specified resource from storage.
 	 * DELETE /tasks/{id}
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
+	 * @param Task $Task
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy(Project $project, Task $task)
 	{
 		//
 	}

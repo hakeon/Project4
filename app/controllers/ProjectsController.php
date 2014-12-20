@@ -10,7 +10,8 @@ class ProjectsController extends \BaseController {
 	 */
 	public function index()
 	{
-		return View::make('projects.index');
+		$projects = Project::all();
+		$this->layout->content = View::make('projects.index', compact('projects'));
 	}
 
 	/**
@@ -21,7 +22,7 @@ class ProjectsController extends \BaseController {
 	 */
 	public function create()
 	{
-		//
+		$this->layout->content = View::make('projects.create', compact('project'));
 	}
 
 	/**
@@ -32,55 +33,55 @@ class ProjectsController extends \BaseController {
 	 */
 	public function store()
 	{
-		//
+		$this->layout->content = View::make('projects.store', compact('project'));
 	}
 
 	/**
 	 * Display the specified resource.
 	 * GET /projects/{id}
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
 	 * @return Response
 	 */
-	public function show($id)
+	public function show(Project $project)
 	{
-		//
+		$this->layout->content = View::make('projects.show', compact('project'));
 	}
 
 	/**
 	 * Show the form for editing the specified resource.
 	 * GET /projects/{id}/edit
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
 	 * @return Response
 	 */
-	public function edit($id)
+	public function edit(Project $project)
 	{
-		//
+		$this->layout->content = View::make('projects.edit', compact('project'));
 	}
 
 	/**
 	 * Update the specified resource in storage.
 	 * PUT /projects/{id}
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
 	 * @return Response
 	 */
-	public function update($id)
+	public function update(Project $project)
 	{
-		//
+		$this->layout->content = View::make('projects.update', compact('project'));
 	}
 
 	/**
 	 * Remove the specified resource from storage.
 	 * DELETE /projects/{id}
 	 *
-	 * @param  int  $id
+	 * @param  Project $project
 	 * @return Response
 	 */
-	public function destroy($id)
+	public function destroy(Project $project)
 	{
-		//
+		$this->layout->content = View::make('projects.destroy', compact('project'));
 	}
 
 }
