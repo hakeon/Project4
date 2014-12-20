@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="71f4d59f-a2b8-49ab-b4b6-d6264bfd7497" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" afterPath="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes.php" afterPath="$PROJECT_DIR$/app/routes.php" />
     </list>
     <ignored path="Project4.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +27,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="2014_12_20_075940_create_projects_table.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/database/migrations/2014_12_20_075940_create_projects_table.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6151798" vertical-offset="252" max-vertical-offset="1092">
-              <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.3075899" vertical-offset="0" max-vertical-offset="751">
+              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -54,6 +54,7 @@
         <option value="$PROJECT_DIR$/app/database/seeds/ProjectsTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/TasksTableSeeder.php" />
         <option value="$PROJECT_DIR$/app/database/seeds/DatabaseSeeder.php" />
+        <option value="$PROJECT_DIR$/app/routes.php" />
       </list>
     </option>
   </component>
@@ -170,7 +171,7 @@
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="seeder&#9;null&#9;null&#10;tasks&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/database/migrations/2014_12_20_080132_create_tasks_table.php&#10;Proj&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/database/migrations/2014_12_20_075940_create_projects_table.php&#10;app&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/config/app.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/vendor/laravel/framework/src/Illuminate/Foundation/start.php&#10;compo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/composer.json&#10;data&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/config/local/database.php&#10;database&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/config/database.php" />
+    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/routes.php&#10;seeder&#9;null&#9;null&#10;tasks&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/database/migrations/2014_12_20_080132_create_tasks_table.php&#10;Proj&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/database/migrations/2014_12_20_075940_create_projects_table.php&#10;app&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/config/app.php&#10;start&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/vendor/laravel/framework/src/Illuminate/Foundation/start.php&#10;compo&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/composer.json&#10;data&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/config/local/database.php&#10;database&#9;FILE&#9;file:///Applications/MAMP/htdocs/Project4/app/config/database.php" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -428,6 +429,25 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6151798" vertical-offset="252" max-vertical-offset="1092">
           <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
+          <folding>
+            <marker date="1419062807000" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder=" Run the migrations. ..." />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder=" Reverse the migrations. ..." />
+            <marker date="1419062807000" expanded="true" signature="-1:-1" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3075899" vertical-offset="0" max-vertical-offset="751">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
           <folding />
         </state>
       </provider>
