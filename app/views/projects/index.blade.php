@@ -1,0 +1,1 @@
+/Applications/MAMP/htdocs/Project4/app/views/projects/index.blade.php
