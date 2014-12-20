@@ -19,3 +19,11 @@ Route::get('/', function()
 Route::resource('projects', 'ProjectsController');
 // Route::resource('tasks', 'TasksController');
 Route::resource('projects.tasks', 'TasksController');
+
+// Override the default behavior for the tasks and projects
+Route::bind('tasks', function($value, $route) {
+	return Task::whereSlug($value)->first();
+});
+Route::bind('projects', function($value, $route) {
+	return Project::whereSlug($value)->first();
+});
