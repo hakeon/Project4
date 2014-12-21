@@ -33,7 +33,10 @@ class ProjectsController extends \BaseController {
 	 */
 	public function store()
 	{
-		$this->layout->content = View::make('projects.store', compact('project'));
+		$input = Input::all();
+		Project::create( $input );
+
+		return Redirect::route('projects.index')->with('message', 'Project created');
 	}
 
 	/**
@@ -69,7 +72,10 @@ class ProjectsController extends \BaseController {
 	 */
 	public function update(Project $project)
 	{
-		$this->layout->content = View::make('projects.update', compact('project'));
+		$input = array_except(Input::all(), '_method');
+		$project->update($input);
+
+		return Redirect::route('projects.show', $project->slug)->with('message', 'Project updated.');
 	}
 
 	/**
@@ -81,7 +87,9 @@ class ProjectsController extends \BaseController {
 	 */
 	public function destroy(Project $project)
 	{
-		$this->layout->content = View::make('projects.destroy', compact('project'));
+		$project->delete();
+
+		return Redirect::route('projects.index')->with('message', 'Project deleted.');
 	}
 
 }
